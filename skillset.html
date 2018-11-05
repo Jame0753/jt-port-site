@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Jamie Todek Design Astric Studio</title>
+      <link rel="icon" href="img/jt-logo-black.png">
+      <link rel="stylesheet" href="css/skillset.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="nav-wrapper">
+            <header class="home-header">
+
+                  <nav class="main-nav">
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              <a href="index2.html"><img src="img/jt-logo.png"/></a>
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="../print/index.html">Print</a></li>
+                                    <li><a href="../web/index.html">Web</a></li>
+                                    <li><a href="../about/index.html">About</a></li>
+                                    <li><a href="../contact/index.html">Contact</a></li>
+                                    <li><a href="../quote/index.html"><span>Quote</span></a></li>
+                              </ul>
+                        </div>
+                  </nav>
+                  <div class="header-full">
+                      <div class="header-text">
+                          <h1>Jamie Todek</h1>
+                          <h4>Designer. Developer. Dreamer.</h4>
+                          <p><span class="break">Skillfully merging the art of</span><span class="break">print communication alongside</span><span class="break"> hand-crafted web design.</span></p>
+                          <a href="about/index.html">Learn More</a>
+                      </div>
+                  </div>
+            </header>
+        </div>
+
+        <main>
+            <section id="skillset">
+                <div class="skillset-text">
+                    <h3><span class="break2">my</span><span class="break2"> skillset</span></h3>
+                    <p>For the past 12 years, my background in printmaking and advertising has evolved into communication design with a focus on quality craftmanship, successful client relations and a mastery of technical skills.</p>
+                    <a href="about/index.html">View Services</a>
+                </div>
+                <div class="skillset-icons">
+                    <div class="icon-link"><a href="#"><img src="img/websites-icon.png" alt="webdesign icon"></a>Websites</div>
+                    <div class="icon-link"><a href="#"><img src="img/branding-icon.png" alt="branding icon"></a>Branding</div>
+                    <div class="icon-link"><a href="#"><img src="img/stationary-icon.png" alt="stationary icon"></a>Stationary</div>
+                    <div class="icon-link"><a href="#"><img src="img/webstore-icon.png" alt="webstore icon"></a>Webstores</div>
+                    <div class="icon-link"><a href="#"><img src="img/marketing-icon.png" alt="marketing icon"></a>Marketing</div>
+                    <div class="icon-link"><a href="#"><img src="img/wordpress-icon.png" alt="wordpress icon"></a>Wordpress</div>
+                </div>
+            </section>
+
+            <section id="print">
+                <div class="print-images">
+                    <div class="print-images-container">
+                        <a href="#" id="lg-img"><img src="img/loneoak.png" alt="Stationary stamp design image, Lone Oak Farm"></a>
+                        <a href="#" id="sm-img-top"><img src="img/real-estate-referrals.png" alt="business card design, real estate referrals "></a>
+                        <a href="#" id="sm-img-btm"><img src="img/tnt.png" alt="business logo on coffee mug, t and t design and construction"></a>
+                    </div>
+                </div>
+                <div class="print-text">
+                    <h2>Print Design</h2>
+                    <p class="emphasize">Tell your story.<br>Leave your mark.<br>Create your future.</p>
+                    <p class="description">Paper &amp; printed materials communicate while encouraging social interaction and the return of happy customers.</p>
+                    <a href="../print/index.html">Print Portfolio</a>
+                </div>
+            </section>
+        </main>
+
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>

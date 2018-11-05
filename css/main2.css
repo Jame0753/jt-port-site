@@ -1,0 +1,451 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*--------------------------------------mobile styles-------------------------------------*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*-------------------------------------------------------------------------------------*/
+/*------------------------------------general style-------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 16pt;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16pt;
+    font-weight: normal;
+}
+
+header {
+      width: 100%;
+      height: 100vh;
+}
+
+p{
+    letter-spacing: 1px;
+}
+
+a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-full, footer{
+    width: 83.33%;
+    margin: 0 auto;
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/*------------------------------------nav bar style-------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+.logo {
+      position: fixed;
+      float: left;
+      margin: 3.5% 10%;
+}
+
+.logo img{
+    width: 50%;
+    height: 50%;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 15px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 0.3125em;
+      font-size: .55em;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px 0 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------home page-------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+/*---------------------------header---------------------------*/
+.home-header{
+      background: url(../img/hero-jt-medium.jpg) no-repeat;
+      background-size: cover;
+}
+
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom:0;
+    padding: 50px 0 0 0;
+}
+
+h4{
+    display: none;
+}
+
+.header-text{
+    float: right;
+    text-align: right;
+    color: white;
+    margin-top: 80px;
+    width: 80%;
+}
+
+.header-text a{
+    background: rgba(107,132,121,0.5);
+    padding: 5px 15px;
+    box-shadow: 0 5px 10px black;
+    font-size: .65em;
+    letter-spacing: .25em;
+}
+
+.header-text p{
+    margin-bottom: 4%;
+    margin-top: 0;
+    font-size: .75em;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.header-text a:hover{
+    background: rgb(107,132,121);
+}
+
+.break{
+    display: inline;
+}
+
+/*---------------------------skillset---------------------------*/
+#skillset{
+    padding: 3% 0 5% 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.skillset-icons{
+    width: 45%;
+    float: left;
+    padding: 0px;
+    margin: 0;
+}
+
+.skillset-text{
+    width: 55%;
+    float: left;
+}
+
+h3{
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 1.75em;
+    line-height: 1em;
+    text-align: left;
+    font-weight: normal;
+    margin: 0;
+}
+
+.skillset-text p{
+    text-align: left;
+    line-height: 1.25em;
+    font-size: .7em;
+    letter-spacing: .05em;
+    margin: 4% 0 5% 0;
+}
+
+
+.icon-link{
+    float: left;
+    font-size: 0.45em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 40%;
+    padding: 10% 5%;
+}
+
+.icon-link img{
+    width: 100%;
+    height: 100%;
+}
+
+.break2{
+    display:block;
+}
+
+.skillset-text a{
+    background: rgba(107,132,121,0.5);
+    padding: 5px 15px;
+    box-shadow: 0 5px 10px grey;
+    font-size: .5em;
+    letter-spacing: .25em;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------about page-------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+.about-header{
+background: url(../img/hero-letterpress.jpg) no-repeat 50% 50%;
+background-size: cover;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*---------------------------------- media queries-------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*--------------------------------------tablet styles-------------------------------------*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*----------------------------------------home page-----------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+/*---------------------------nav bar---------------------------*/
+@media(max-width: 767px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
+
+@media all and (min-width:768px) {
+/*---------------------------nav---------------------------*/
+    .logo{
+        margin: 1% 7%;
+    }
+
+    .logo img{
+        width: 70%;
+        height: 70%;
+    }
+
+/*---------------------------header---------------------------*/
+    h1{
+        font-size: 4em;
+    }
+
+    h4{
+        font-family: 'Averia Serif Libre', cursive;
+        color: #6b8479;
+        padding-top: 10px;
+        font-weight: normal;
+        display: inline;
+        font-size: 1.1em;
+    }
+
+    .break{
+        display: block;
+    }
+
+    .home-header{
+        background-position: left;
+        font-size: 1.35em;
+    }
+
+    .header-text p{
+        margin-top: 10px;
+        line-height: 1.5em;
+        font-size: .75em;
+        letter-spacing: .08em;
+    }
+
+/*---------------------------skillset---------------------------*/
+    .skillset-icons{
+        width: 60%;
+        float: left;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .skillset-text{
+        width: 40%;
+        float: left;
+    }
+
+    .icon-link{
+    width: 23%;
+    font-size: .75em;
+    padding: 3% 5%;
+    }
+
+    .skillset-text p{
+    font-size: .75em;
+    }
+
+    .skillset-text a{
+        font-size: .75em;
+    }
+
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*-------------------------------------desktop styles-------------------------------------*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media all and (min-width:940px) {
+/*-------------------------------------------------------------------------------------*/
+/*----------------------------------------grid-----------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+
+    #print, #web{
+        width: 91.66%;
+        margin: 0 auto;
+    }
+
+    #print{
+        float: right;
+    }
+
+    #web{
+        float:left;
+    }
+/*-------------------------------------------------------------------------------------*/
+/*----------------------------------------home page-----------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+/*---------------------------nav---------------------------*/
+    .logo{
+        margin: 1% 7%;
+    }
+
+    nav ul{
+    padding-right: 7%;
+    }
+
+/*---------------------------header---------------------------*/
+    .home-header{
+          background: url(../img/hero-jt.jpg) no-repeat 50% 50%;
+          background-position: center;
+          background-size: cover;
+          background-position: 33% 5%;
+    }
+
+    h1{
+        margin: 100px 0 0 0;
+        font-size: 5em;
+    }
+
+    h4{
+        font-size: 1.35em;
+    }
+
+    .header-text p{
+        line-height: 1.5em;
+        font-size: 1em;
+        letter-spacing: .1em;
+    }
+
+    .header-text a{
+        font-size: 1em;
+    }
+
+    /*---------------------------skillset---------------------------*/
+    .skillset-text h3{
+        font-size: 3em;
+    }
+
+    .break2{
+        display: inline;
+    }
+
+    .skillset-text p{
+        font-size: 1em;
+        line-height: 1.75em;
+    }
+
+    .skillset-text a{
+        font-size: 1em;
+    }
+
+    #skillset{
+        padding-top: 5%;
+    }
+
+    .skillset-icons{
+        width: 68%;
+        padding-left: 2%;
+    }
+
+    .skillset-text{
+        width: 30%;
+    }
+
+    .icon-link{
+    width: 12%;
+    padding: 0 0 0 4%;
+    }
+
+
+}

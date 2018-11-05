@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Sticky Navbar</title>
+      <link rel="stylesheet" href="css/main2.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="nav-wrapper">
+            <header class="about-header">
+
+                  <nav class="main-nav">
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              <a href="../index2.html"><img src="../img/jt-logo-black.png"/></a>
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="../print/index2.html">Print</a></li>
+                                    <li><a href="../web/index.html">Web</a></li>
+                                    <li><a href="../about/index.html">About</a></li>
+                                    <li><a href="../contact/index.html">Contact</a></li>
+                                    <li><a href="../quote/index.html"><span>Quote</span></a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+            <div class="about-content">
+                <div class="bio-pic">
+                </div>
+                <div class="bio-story">
+                    <p>Growing up, I always knew I wanted to be a designer. My mother was a designer. It is in my blood. Right out of highschool I went to art school at College for Creative studies where I initially majored in advertising and minored in photography. After a year, I switched my major to Graphic Design so I could be more experimental and changed my minor to printmaking. My passion bloomed from there and I quickly became obsessed with all things relating to typography, pattern and illustration. After graduating with a bachlor degree in Graphic Design and media arts, I expanded my education at skillcrush to be more foused on web design.</p>
+                </div>
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
